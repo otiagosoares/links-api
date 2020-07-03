@@ -1,13 +1,14 @@
 const express =  require('express');
-const db = require('./models')
-const authController = require('./conttrollers/auth');
-const { urlencoded } = require('express');
 const app = express();
+const db = require('./models');
+const authController = require('./conttrollers/auth');
+const response = require('./middlewares/response');
 
+app.use(response);
 app.use(express.json());
-app.use(urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
-app.use('/auth', authController)
+app.use('/auth', authController);
 
 app.get('/', (req, res) => {
     return res.json('Api is runnibg...');
