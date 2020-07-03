@@ -1,0 +1,15 @@
+{
+    "account.signup.email_exists": "Email já cadastrado.",
+    "account.signup.success": "Cadastro efetuado com sucesso!",
+    "account.signup.password_confirmation.any.required": "Confirmação de senha é obrigatório.",
+    "account.signup.password_confirmation.any.only": "As senhas não são iguais.",
+    "account.signup.password.string.empty": "Senha é obrigatório.",
+    "account.signup.password.string.pattern.base": "Senha deve conter no mínimo 6 caracteres. Incluindo letras e números.",
+    "account.signup.email.string.empty": "Email é obrigatório.",
+    "account.signup.email.string.email": "Digite um email válido.",
+
+    "account.signin.password.string.empty": "Senha é obrigatório.",
+    "account.signin.password.string.pattern.base": "Senha deve conter no mínimo 6 caracteres. Incluindo letras e números.",
+    "account.signin.email.string.empty": "Email é obrigatório.",
+    "account.signin.email.string.email": "Digite um email válido."
+}
