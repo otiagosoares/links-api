@@ -11,5 +11,8 @@
     "account.signin.password.string.empty": "Senha é obrigatório.",
     "account.signin.password.string.pattern.base": "Senha deve conter no mínimo 6 caracteres. Incluindo letras e números.",
     "account.signin.email.string.empty": "Email é obrigatório.",
-    "account.signin.email.string.email": "Digite um email válido."
+    "account.signin.email.string.email": "Digite um email válido.",
+    "account.signin.invalid": "Credenciais inválidas",
+    "account.signin.success": "Login efetuado com sucesso."
+
 }
