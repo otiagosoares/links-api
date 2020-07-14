@@ -4,8 +4,11 @@ const db = require('./models');
 const authController = require('./conttrollers/auth');
 const linkController = require('./conttrollers/link');
 const response = require('./middlewares/response');
+const checkJwt = require('./middlewares/jwt');
 
 app.use(response);
+app.use(checkJwt);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
