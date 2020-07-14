@@ -2,6 +2,17 @@ const { verifyJwt } = require('../helpers/jwt');
 
 const checkJwt = (req, res, next) =>{
 
+    //alias 'path' to url
+    const {url: path} = req;
+
+    const excludedPath = [
+        '/auth/sign-up', 
+        '/auth/sign-in'
+    ];
+
+    const isExcluded = !!excludedPath.find( p => p.startsWith(path));
+    if(isExcluded) return next();
+
     let token = req.headers['authorization'];
     token = token ? token.slice(7, token.length) : null;
 
