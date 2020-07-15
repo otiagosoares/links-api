@@ -1,4 +1,5 @@
 const express =  require('express');
+const cors = require('cors');
 const app = express();
 const db = require('./models');
 const authController = require('./conttrollers/auth');
@@ -6,6 +7,7 @@ const linkController = require('./conttrollers/link');
 const response = require('./middlewares/response');
 const checkJwt = require('./middlewares/jwt');
 
+app.use(cors);
 app.use(response);
 app.use(checkJwt);
 
